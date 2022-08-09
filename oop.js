@@ -1,24 +1,88 @@
-function Circle(radius){
 
-    // Instance members
-    this.radius = radius;
 
-}
 
-// Prototype members
-Circle.prototype.draw = function(){
-    console.log('draw');
-}
 
-const c1 = new Circle(1);
 
-const c2 = new Circle(2);
 
-Circle.prototype.toString = function(){
-    return `Circle with radius ${this.radius}`
-}
 
-console.log(c1, c2);
+
+
+
+// function Circle(radius){
+
+//     // Instance members
+//     this.radius = radius;
+
+//     this.move = function(){
+//         this.draw();
+//         console.log('move');
+//     }
+
+// }
+
+
+
+
+// const c1 = new Circle(1);
+
+// // Prototype members
+// Circle.prototype.draw = function(){
+//     console.log('draw');
+
+// }
+
+
+// //Object.keys returns only instance members
+// console.log(Object.keys(c1));
+
+// //for in loop returns all members (instance + prototype)
+// for (let key in c1) console.log(key);
+
+
+// //Own Property = Instance property
+
+
+
+
+
+
+
+
+
+// function Circle(radius){
+
+//     // Instance members
+//     this.radius = radius;
+
+//     this.move = function(){
+//         this.draw();
+//         console.log('move');
+//     }
+
+// }
+
+// // Prototype members
+// Circle.prototype.draw = function(){
+//     console.log('draw');
+
+// }
+
+// const c1 = new Circle(1);
+
+// const c2 = new Circle(2);
+
+// Circle.prototype.toString = function(){
+//     return `Circle with radius ${this.radius}`
+// }
+
+// console.log(c1, c2);
+// c1.move();
+
+
+
+
+
+
 
 
 // Object.getPrototypeOf(myObj);
