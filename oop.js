@@ -1,10 +1,67 @@
-let person = {
-    name: 'Yuuto'
+function Circle(radius){
+
+    // Instance members
+    this.radius = radius;
+
 }
 
-for (let key in person){
-    console.log(key);
+// Prototype members
+Circle.prototype.draw = function(){
+    console.log('draw');
 }
+
+const c1 = new Circle(1);
+
+const c2 = new Circle(2);
+
+Circle.prototype.toString = function(){
+    return `Circle with radius ${this.radius}`
+}
+
+console.log(c1, c2);
+
+
+// Object.getPrototypeOf(myObj);
+
+// // myObj.__proto__ (parent of myObj)
+
+// function Circle(radius){
+//     this.radius = radius;
+// }
+
+// const circle = new Circle(1);
+
+// Circle.prototype === circle.__proto__;
+
+
+
+
+// let person ={name:"Yuuto"};
+
+// Object.defineProperty(name, 'name', {
+//     writable:false,
+//     enumerable: true,
+//     configurable: false;
+     
+
+// });
+
+// // let objectBase = Object.getPrototypeOf(person);
+
+// // let descriptor = Object.getOwnPropertyDescriptor(objectBase, 'toString');
+
+// // console.log(descriptor);
+
+
+
+
+// let person = {
+//     name: 'Yuuto'
+// }
+
+// for (let key in person){
+//     console.log(key);
+// }
 
 
 
