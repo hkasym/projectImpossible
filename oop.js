@@ -8,7 +8,7 @@
 
 // Shape .prototype.duplicate = function(){
 //     console.log('duplicate');
-}
+// }
 
 
 // function Circle(radius){
